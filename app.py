@@ -9,7 +9,7 @@ app = FastAPI()
 class GenerationRequest(BaseModel):
     prompt: str
     max_tokens: int = 100
-    temperature: float = 0.7
+    temperature: float = 0.75
 
 class GenerationResponse(BaseModel):
     generated_text: str
